@@ -68,7 +68,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("https://cloudbasedvpn.netlify.app"));
+        configuration.setAllowedOrigins(List.of("https://cloudbasedvpn.netlify.app","http://localhost:5173"));
         configuration.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
         // Allow all headers so that Authorization, Content-Type, etc. are OK
         configuration.setAllowedHeaders(List.of("*"));
